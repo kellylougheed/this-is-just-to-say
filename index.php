@@ -1,4 +1,15 @@
-<!DOCTYPE html>
+<? php
+$to = "Insert the email address here";
+$subject = "This is just to say...";
+$message = "Insert the poem here";
+$headers = 'From: Insert your name here' . "\r\n" .
+    "Created at http://www.kellylougheed.com/this-is-just-to-say" . "\r\n" .
+    "X-Mailer: PHP/" . phpversion();
+
+mail($to, $subject, $message, $headers);
+?>
+
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
