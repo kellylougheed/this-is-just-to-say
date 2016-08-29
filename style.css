@@ -17,11 +17,11 @@ div.tint {
 }
 
 div.bg {
-	position: absolute;
-	top: 0;
-	bottom: 0;
+	position: fixed; /* Check if this is compatible with mobile devices */
+	height: 100%;
 	width: 100%;
 	margin: 0 auto;
+	overflow: auto;
 }
 
 div.container {
