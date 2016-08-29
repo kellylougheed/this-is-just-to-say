@@ -1,0 +1,119 @@
+body {
+	background: url("http://www.kellylougheed.com/images/backgrounds/strawberries.jpg") no-repeat center center fixed; 
+  	background-size: cover;
+	font-family: 'Open Sans', arial;
+	font-weight: 100;
+	letter-spacing: 2px;
+	margin: 0;
+	color: #ffcccc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div.tint {
+	background: rgba(0, 0, 0, .5);
+}
+
+div.bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	margin: 0 auto;
+}
+
+div.container {
+	max-width: 800px;
+	padding: 15px;
+	margin: 0 auto;
+	display: table;
+}
+
+div.tr {
+	display: table-row;
+}
+
+div.half {
+	width: 50%;
+	float: left;
+	padding: 10px;
+	display: table-cell;
+}
+
+.center {
+	text-align: center;
+}
+
+h1, h2 {
+	font-family: 'Poiret One', helvetica;
+	font-weight: 100;
+	text-align: center;
+	margin: 5px 0 0 0;
+}
+
+h1 {
+	font-size: 4em;
+	color: #ff0000;
+}
+
+h2 {
+	font-size: 2em;
+	color: #ff6666;
+}
+
+hr {
+	visibility: hidden;
+}
+
+input[type="text"], input[type="button"], select {
+  background-color: rgba(255, 255, 255, .2);
+  font-family: arial;
+  letter-spacing: 2px;
+  font-size: 1em;
+  color: #ff6666;
+  border: 1px solid #ff6666;
+  width: 65%;
+  padding: 5px;
+  margin-bottom: 2px;
+}
+
+select.short {
+	width: 25%;
+}
+
+select.long {
+	width: 50%;
+}
+
+a {
+	text-decoration: none;
+	color: #ff5050;
+}
+
+a:hover {
+	color: #ffffff;
+}
+
+/********** Small devices **********/
+@media (max-width: 767px) {
+
+  h1 {
+    font-size: 2em;
+  }
+
+  div.half {
+  	width: 100%;
+  }
+
+  select.short {
+  	width: 25%;
+  }
+
+input[type="text"], input[type="submit"] {
+  width: 70%;
+}
+
+
+}
