@@ -1,14 +1,3 @@
-<? php
-$to = "Insert the email address here";
-$subject = "This is just to say...";
-$message = "Insert the poem here";
-$headers = 'From: Insert your name here' . "\r\n" .
-    "Created at http://www.kellylougheed.com/this-is-just-to-say" . "\r\n" .
-    "X-Mailer: PHP/" . phpversion();
-
-mail($to, $subject, $message, $headers);
-?>
-
 <html>
 <head>
 	<meta charset="utf-8">
@@ -67,6 +56,34 @@ What did you eat?<br>
 <div class="half tint">
 <h2>This Is Just To Say</h2>
 <p id="poem">Your poem will appear here when you click "Write the poem!"</p>
+
+<?php
+  if (isset($_REQUEST['email']))  {
+
+  $email = $_REQUEST['email'];
+  $subject = "This is just to say...";
+  $message = $_REQUEST['poem'];
+
+  mail($email, $subject, $message);
+
+  echo "Thank you for using This is Just to Say!";
+  }
+
+  else  {
+?>
+
+<h2>Send it to a friend</h2>
+<form method="post">
+  Friend's Email <input name="email" type="text"><br>
+  Poem:<br>
+  <textarea name="poem"></textarea><br>
+  <input type="submit" value="Send">
+</form>
+
+<?php
+  }
+?>
+
 </div>
 </div>
 </div>
