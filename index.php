@@ -66,7 +66,7 @@ What did you eat?<br>
 
   mail($email, $subject, $message);
 
-  echo "Thank you for using This is Just to Say!";
+  echo "Your email has been sent!";
   }
 
   else  {
@@ -76,7 +76,7 @@ What did you eat?<br>
 <form method="post">
   Friend's Email <input name="email" type="text"><br>
   Poem:<br>
-  <textarea name="poem"></textarea><br>
+  <textarea name="poem" id="poem"></textarea><br>
   <input type="submit" value="Send">
 </form>
 
