@@ -67,7 +67,7 @@ hr {
 	visibility: hidden;
 }
 
-input[type="text"], input[type="button"], select, textarea {
+input[type="text"], input[type="button"], select, textarea, button {
   background-color: rgba(255, 255, 255, .2);
   font-family: arial;
   letter-spacing: 2px;
@@ -77,6 +77,10 @@ input[type="text"], input[type="button"], select, textarea {
   width: 65%;
   padding: 5px;
   margin-bottom: 2px;
+}
+
+textarea {
+  width: 85%;
 }
 
 select.short {
