@@ -73,10 +73,12 @@ What did you eat?<br>
 
 <h2>Send it to a friend</h2>
 <form method="post" name="poemMailer" id="poemMailer">
-  Friend's Email <input name="email" type="text"><br>
+  <p>Friend's Email <input name="email" type="text"><br>
   Poem:<br>
-  <textarea name="poemMessage" id="poemMessage"></textarea><br>
+  <textarea name="poemMessage" id="poemMessage"></textarea></p>
+  <div class="center">
   <input type="submit" value="Send">
+  </div>
 </form>
 
 <?php
