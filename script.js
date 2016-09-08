@@ -44,7 +44,7 @@ function writePoem(form) {
 	}
 	poem = "I have eaten<br>"+article+" "+food+"<br>that "+grammar[0]+" "+prepPhrase+" "+place+"<br><br>";
 	poem += "and which<br>you were probably<br>saving<br>"+meal+"<br><br>";
-	poem += "Forgive me<br>"+grammar[1]+" "+adjectives[0]+"<br>so "+adjectives[1]+"<br> and so "+adjectives[2];
+	poem += "Forgive me<br>"+grammar[1]+" "+adjectives[0]+"<br>so "+adjectives[1]+"<br>and so "+adjectives[2];
 	$("#poem").html(poem);
 	var poemToMail = removeHTML(poem);
 	$("#poemMessage").html(poemToMail);
