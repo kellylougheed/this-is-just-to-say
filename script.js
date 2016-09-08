@@ -7,6 +7,11 @@ var place;
 var meal;
 var adjectives = [];
 
+function removeHTML(str) {
+	str = str.replace(\"<br>"\g, '');
+	return str;
+}
+
 function writePoem(form) {
 	article = form.article.value;
 	food = form.food.value;
@@ -32,4 +37,6 @@ function writePoem(form) {
 	poem += "Forgive me<br>they were "+adjectives[0]+"<br>so "+adjectives[1]+"<br> and so "+adjectives[2];
 	console.log(poem);
 	$("#poem").html(poem);
+	var poemToMail = removeHTML(poem);
+	$("#poemMessage").html(poemToMail);
 }

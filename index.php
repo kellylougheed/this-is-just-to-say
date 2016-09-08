@@ -58,7 +58,7 @@ What did you eat?<br>
 <p id="poem">Your poem will appear here when you click "Write the poem!"</p>
 
 <?php
-  if (isset($_REQUEST['email']))  {
+  if (isset($_REQUEST['email']) && isset($_REQUEST['poem']))  {
 
   $email = $_REQUEST['email'];
   $subject = "This is just to say...";
@@ -68,16 +68,15 @@ What did you eat?<br>
   mail($email, $subject, $message, $headers);
 
   echo "Your email has been sent!";
-  }
-
-  else  {
+  } else {
+    echo "Please fill out the email and message fields.";
 ?>
 
 <h2>Send it to a friend</h2>
-<form method="post">
+<form method="post" name="poemMailer" id="poemMailer">
   Friend's Email <input name="email" type="text"><br>
   Poem:<br>
-  <textarea name="poem" id="poem"></textarea><br>
+  <textarea name="poemMessage" id="poemMessage"></textarea><br>
   <input type="submit" value="Send">
 </form>
 
