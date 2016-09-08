@@ -7,13 +7,23 @@ var place;
 var meal;
 var adjectives = [];
 
+function areThereErrors(form) {
+	if (form.food.value == "" || form.adjective1.value == "" || form.adjective2.value == "" || form.adjective3.value == "") {
+		alert("Please fill in all the form fields.");
+		return true;
+	} else {
+		return false;
+	}
+}
+
 function removeHTML(str) {
-	str = str.replace(\"<br>"\g, '');
+	str = str.replace(/<br>/g, "\n");
 	return str;
 }
 
 function writePoem(form) {
-	article = form.article.value;
+	if (areThereErrors(form) === false) {
+		article = form.article.value;
 	food = form.food.value;
 	food = food.toLowerCase();
 	$("#poem").html(food);
@@ -34,9 +44,9 @@ function writePoem(form) {
 	}
 	poem = "I have eaten<br>"+article+" "+food+"<br>that "+grammar[0]+" "+prepPhrase+" "+place+"<br><br>";
 	poem += "and which<br>you were probably<br>saving<br>"+meal+"<br><br>";
-	poem += "Forgive me<br>they were "+adjectives[0]+"<br>so "+adjectives[1]+"<br> and so "+adjectives[2];
-	console.log(poem);
+	poem += "Forgive me<br>"+grammar[1]+" "+adjectives[0]+"<br>so "+adjectives[1]+"<br> and so "+adjectives[2];
 	$("#poem").html(poem);
 	var poemToMail = removeHTML(poem);
 	$("#poemMessage").html(poemToMail);
+	}
 }

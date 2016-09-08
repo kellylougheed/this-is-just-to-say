@@ -69,7 +69,6 @@ What did you eat?<br>
 
   echo "Your email has been sent!";
   } else {
-    echo "Please fill out the email and message fields.";
 ?>
 
 <h2>Send it to a friend</h2>
