@@ -1,6 +1,6 @@
 body {
 	background: url("http://www.kellylougheed.com/images/backgrounds/strawberries.jpg") no-repeat center center fixed; 
-  	background-size: cover;
+  background-size: cover;
 	font-family: 'Open Sans', arial;
 	font-weight: 100;
 	letter-spacing: 2px;
@@ -98,6 +98,27 @@ a {
 
 a:hover {
 	color: #ffffff;
+}
+
+/********** Footer **********/
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 20px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+  /* Set the fixed height of the footer here */
+  height: 20px;
+  background-color: rgb(55,14,23);
+  text-align: center;
+  font-size: .7em;
 }
 
 /********** Small devices **********/

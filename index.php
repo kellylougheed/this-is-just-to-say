@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>This Is Just To Say</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
+  <script src="https://use.fontawesome.com/ee14bb1f23.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
@@ -88,6 +89,13 @@ What did you eat?<br>
 </div>
 </div>
 </div>
+
+<div class="footer">
+      Made by <a class="contact" href="http://www.kellylougheed.com" target="_blank">Kelly Lougheed</a> • <a class="contact" href="mailto:hello@kellylougheed.com?Subject=Hello"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+  <a class="contact" href="https://www.linkedin.com/in/kelly-lougheed-ba147b121" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <a class="contact" href="https://github.com/kellylougheed" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+    <a class="contact" href="http://www.twitter.com/kellylougheed" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  </div>
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
