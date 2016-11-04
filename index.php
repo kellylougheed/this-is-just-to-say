@@ -17,7 +17,7 @@
 <p>Okay, so you ate some food that maybe your roommate wanted, and you feel compelled to apologize. <i>Be poetic about it!</i> Fill out this form and let poet <a href="https://www.poets.org/poetsorg/poem/just-say" target="_blank">William Carlos Williams</a> do the work for you.</p>
 
 <div class="tr">
-<div class="half tint">
+<div class="half tint" id="one">
 <form name="poemWriter" id="poemWriter" action="#" method="">
 What did you eat?<br>
 <select name="article" class="short">
@@ -54,7 +54,7 @@ What did you eat?<br>
 </form>
 </div>
 
-<div class="half tint">
+<div class="half tint" id="two">
 <h2>This Is Just To Say</h2>
 <p id="poem">Your poem will appear here when you click "Write the poem!"</p>
 
@@ -91,7 +91,7 @@ What did you eat?<br>
 </div>
 
 <div class="footer">
-      Made by <a class="contact" href="http://www.kellylougheed.com" target="_blank">Kelly Lougheed</a>. <a class="contact" href="mailto:hello@kellylougheed.com?Subject=Hello"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a class="contact" href="https://www.linkedin.com/in/kelly-lougheed-ba147b121" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a class="contact" href="https://github.com/kellylougheed" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a><a class="contact" href="http://www.twitter.com/kellylougheed" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      Made by <a class="contact" href="http://www.kellylougheed.com" target="_blank">Kelly Lougheed</a>. <a class="contact" href="mailto:hello@kellylougheed.com?Subject=Hello"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> <a class="contact" href="https://www.linkedin.com/in/kelly-lougheed-ba147b121" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a> <a class="contact" href="https://github.com/kellylougheed" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a class="contact" href="http://www.twitter.com/kellylougheed" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
   </div>
 
 </body>
