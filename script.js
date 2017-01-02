@@ -1,4 +1,4 @@
-(function($) {
+
 	var poem;
 	var article;
 	var food;
@@ -51,4 +51,4 @@
 			$("#poemMessage").html(poemToMail);
 		}
 	}
-})(jQuery);
+
