@@ -9,7 +9,7 @@ This Is Just To Say generates a mad libs version of Williams Carlos Williams's p
 <h2>Features:</h2>
 
 <ul>
-<li> The user fills in a number of details about the food eaten to customize WCW's poem as much as possible.</li><br/>
+<li> The user fills in a number of details about the food to customize WCW's poem as much as possible.</li><br/>
 
 <li> A JavaScript algorithm creates a new, grammatically correct poem based on the user's input.</li><br/>
 
