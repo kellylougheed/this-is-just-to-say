@@ -7,17 +7,17 @@
 	<link href="style.css" rel="stylesheet" type="text/css">
   <script src="https://use.fontawesome.com/ee14bb1f23.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="tint bg">
+<div class="light-tint bg">
 <div class="container">
 <h1>This Is Just To Say</h1>
 
 <p>Okay, so you ate some food that maybe your roommate wanted, and you feel compelled to apologize. <i>Be poetic about it!</i> Fill out this form and let poet <a href="https://www.poets.org/poetsorg/poem/just-say" target="_blank">William Carlos Williams</a> do the work for you.</p>
 
 <div class="tr">
-<div class="half tint" id="one">
+<div class="half dark-tint" id="one">
 <form name="poemWriter" id="poemWriter" action="#" method="">
 What did you eat?<br>
 <select name="article" class="short">
@@ -54,7 +54,7 @@ What did you eat?<br>
 </form>
 </div>
 
-<div class="half tint" id="two">
+<div class="half dark-tint" id="two">
 <h2>This Is Just To Say</h2>
 <p id="poem">Your poem will appear here when you click "Write the poem!"</p>
 

@@ -1,7 +1,7 @@
 body {
 	background: url("http://www.kellylougheed.com/images/backgrounds/strawberries.jpg") no-repeat center center fixed; 
   background-size: cover;
-	font-family: 'Open Sans', arial;
+	font-family: 'Raleway', arial;
 	font-weight: 100;
 	letter-spacing: 2px;
 	margin: 0;
@@ -12,8 +12,12 @@ body {
   box-sizing: border-box;
 }
 
-div.tint {
-	background: rgba(0, 0, 0, .5);
+div.light-tint {
+	background: rgba(0, 0, 0, .4);
+}
+
+div.dark-tint {
+  background: rgba(0, 0, 0, .5);
 }
 
 div.bg {
@@ -43,6 +47,10 @@ div.half {
 	display: table-cell;
 }
 
+p {
+  line-height: 25px;
+}
+
 div#one {
   border-radius: 10px 0 10px 10px;
 }
@@ -65,11 +73,13 @@ h1, h2 {
 h1 {
 	font-size: 4em;
 	color: #ff0000;
+  text-shadow: 1px 1px rgba(0,0,0,.5);
 }
 
 h2 {
 	font-size: 2em;
-	color: #ff6666;
+	color: #ff0000;
+  text-shadow: 1px 1px rgba(0,0,0,.5);
 }
 
 hr {
@@ -77,12 +87,12 @@ hr {
 }
 
 input[type="text"], input[type="button"], input[type="submit"], select, textarea, button {
-  background-color: rgba(255, 255, 255, .2);
-  font-family: arial;
+  background-color: rgba(255, 255, 255, .1);
+  font-family: 'Raleway', arial;
   letter-spacing: 2px;
   font-size: 1em;
-  color: #ff6666;
-  border: 1px solid #ff6666;
+  color: #ffcccc;
+  border: 1px solid #ffcccc;
   border-radius: 5px;
   width: 65%;
   padding: 5px;
@@ -103,7 +113,7 @@ select.long {
 
 a {
 	text-decoration: none;
-	color: #ff5050;
+	color: #ff0000;
 }
 
 a:hover {
@@ -126,7 +136,7 @@ body {
   padding: 1px;
   /* Set the fixed height of the footer here */
   height: 20px;
-  background-color: rgb(55,14,23);
+  background: rgba(0, 0, 0, .5);
   text-align: center;
   font-size: .7em;
 }
