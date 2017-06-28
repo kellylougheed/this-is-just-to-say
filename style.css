@@ -1,62 +1,45 @@
 body {
-	background: url("http://www.kellylougheed.com/images/backgrounds/strawberries.jpg") no-repeat center center fixed; 
+	background: url(http://www.kellylougheed.com/images/backgrounds/lemons.jpg) no-repeat center center fixed; 
   background-size: cover;
 	font-family: 'Raleway', arial;
 	font-weight: 100;
 	letter-spacing: 2px;
 	margin: 0;
-	color: #ffcccc;
+	color: #333;
 }
 
 * {
   box-sizing: border-box;
 }
 
-div.light-tint {
-	background: rgba(0, 0, 0, .4);
-}
-
-div.dark-tint {
-  background: rgba(0, 0, 0, .5);
-}
-
-div.bg {
-	position: fixed; /* Check if this is compatible with mobile devices */
-	height: 100%;
-	width: 100%;
-	margin: 0 auto;
-	overflow: auto;
-}
-
 div.container {
-	max-width: 800px;
-	padding: 15px;
-	margin: 0 auto;
-	display: table;
-	margin-bottom: 50px;
+  max-width: 800px;
+  padding: 15px;
+  margin: 0 auto;
+  display: table;
+  margin-bottom: 50px;
 }
 
 div.tr {
+  border: 1px solid red;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, .6);
 	display: table-row;
 }
 
+p.intro {
+  padding: 10px 10px 0 10px;
+}
+
 div.half {
-	width: 50%;
-	float: left;
-	padding: 10px;
-	display: table-cell;
+  width: 50%;
+  float: left;
+  padding: 10px;
+  display: table-cell;
 }
 
 p {
   line-height: 25px;
-}
-
-div#one {
-  border-radius: 10px 0 10px 10px;
-}
-
-div#two {
-  border-radius: 0 10px 10px 0;
 }
 
 .center {
@@ -67,19 +50,19 @@ h1, h2 {
 	font-family: 'Poiret One', helvetica;
 	font-weight: 100;
 	text-align: center;
-	margin: 5px 0 0 0;
+	margin: 5px 0 10px 0;
 }
 
 h1 {
 	font-size: 4em;
-	color: #ff0000;
+  color: #ffff66;
   text-shadow: 1px 1px rgba(0,0,0,.5);
 }
 
 h2 {
 	font-size: 2em;
-	color: #ff0000;
-  text-shadow: 1px 1px rgba(0,0,0,.5);
+  color: #777;
+  text-shadow: 1px 1px rgba(255,255,255,.5);
 }
 
 hr {
@@ -87,16 +70,33 @@ hr {
 }
 
 input[type="text"], input[type="button"], input[type="submit"], select, textarea, button {
-  background-color: rgba(255, 255, 255, .1);
   font-family: 'Raleway', arial;
   letter-spacing: 2px;
   font-size: 1em;
-  color: #ffcccc;
-  border: 1px solid #ffcccc;
-  border-radius: 5px;
   width: 65%;
   padding: 5px;
   margin-bottom: 2px;
+}
+
+input[type="text"], select, textarea, button {
+  background: none;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+input[type="button"], input[type="submit"] {
+  color: #ffff66;
+  border-radius: 20px;
+  text-transform: uppercase;
+  border: 2px solid #ffff66;
+  background: rgba(0,0,0,.4);
+  transition: .5s background;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover {
+  background: rgba(0,0,0,.6);
+  cursor: pointer;
 }
 
 textarea {
@@ -113,11 +113,15 @@ select.long {
 
 a {
 	text-decoration: none;
-	color: #ff0000;
+  transition: .5s background;
+  color: #333;
+	border-bottom: 2px solid #ffff66;
 }
 
 a:hover {
-	color: #ffffff;
+	color: #333;
+  background-color: #ffff66;
+  border-bottom: 2px solid #ffff66;
 }
 
 /********** Footer **********/
@@ -139,8 +143,19 @@ body {
   background: rgba(0, 0, 0, .5);
   text-align: center;
   font-size: .7em;
+  color: #ffff66;
 }
 
+.footer a {
+  color: #ccc;
+  border: none;
+}
+
+.footer a:hover {
+  color: #fff;
+  background: none;
+  border: none;
+}
 /********** Small devices **********/
 @media (max-width: 767px) {
 
@@ -156,9 +171,9 @@ body {
   	width: 25%;
   }
 
-input[type="text"], input[type="submit"] {
-  width: 70%;
-}
+  input[type="text"], input[type="submit"] {
+    width: 70%;
+  }
 
 
 }
